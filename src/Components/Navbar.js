@@ -14,9 +14,9 @@ const Navbar = () => {
                 style={{ background: '#2E3B55' }
                 }
             >
-			  <Toolbar>
-                
-                <MyButton>Work</MyButton>
+			  <Toolbar style ={{margin: "auto"}}>
+                <MyButton>My Life</MyButton>
+                <MyButton>My Work</MyButton>
                 <MyButton>Experience</MyButton>
                 <MyButton>Education</MyButton>
                 <MyButton>Certifications</MyButton>

@@ -11,9 +11,9 @@ function MyButton(props){
     const BaseButton = withStyles(() => ({
         root: {
           color: (props.mainColor || "#f2f2f2"),
-          backgroundColor: (props.backgroundColor || "red"),
+          backgroundColor: (props.backgroundColor || "#3b5998"),
           "&:hover": {
-            backgroundColor: (props.hoverColor || "yellow"),
+            backgroundColor: (props.hoverColor || "#8b9dc3"),
           },
         },
       }))(Button);
