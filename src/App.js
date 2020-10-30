@@ -5,7 +5,6 @@ import Navbar from "./Components/Navbar.js"
 function App() {
   return (
     <>
-    <p>NUMANUMA</p>
     <Navbar></Navbar>
     </>
   );

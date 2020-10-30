@@ -2,22 +2,16 @@ import React from "react";
 import {
 	AppBar,
 	Toolbar,
-	IconButton,
-	Avatar,
-	Typography,
-	Button,
 	Box
 } from "@material-ui/core";
 
 const Navbar = () => {
 	return(
 		<Box component="nav" position="static">
-			<AppBar position="static">
+			<AppBar position="static"
+                style={{ background: '#2E3B55' }}
+            >
 			  <Toolbar>
-			    <Typography variant="h6" style={{ flex: 1 }}>
-			      Logo
-			    </Typography>
-			    <Button color="inherit">Login</Button>
 			  </Toolbar>
 			</AppBar>
 		</Box>
