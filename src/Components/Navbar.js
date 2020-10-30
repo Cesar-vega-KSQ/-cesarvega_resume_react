@@ -55,16 +55,8 @@ const Navbar = () => {
         <List>
          
             <ListItem button key="My Life">
-              <ListItemText primary="My Life" />
+              <ListItemText primary="My Life"/>
             </ListItem>
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
         </List>
       </div>
     );
@@ -80,7 +72,7 @@ const Navbar = () => {
               <div>
                 {['left'].map((anchor) => (
                     <React.Fragment key="left">
-                    <Button onClick={toggleDrawer(anchor, true)}><Menu/></Button>
+                    <Button onClick={toggleDrawer(anchor, true)}><h2 style ={{color: "#dfe3ee"}}>Open menu</h2><Menu style={{ color: "#dfe3ee"}} fontSize="large"/></Button>
                     <Drawer anchor="left" open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                         {list(anchor)}
                     </Drawer>
