@@ -29,7 +29,6 @@ function MyButton(props){
     return(
         <>
             <BaseButton
-            
             className={classes.margin}
             >{props.children}</BaseButton>
         </>
