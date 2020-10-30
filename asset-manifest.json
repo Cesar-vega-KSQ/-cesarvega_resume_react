@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/-cesarvega_resume_react/static/css/main.73efbf52.chunk.css",
-    "main.js": "/-cesarvega_resume_react/static/js/main.893abb05.chunk.js",
-    "main.js.map": "/-cesarvega_resume_react/static/js/main.893abb05.chunk.js.map",
-    "runtime-main.js": "/-cesarvega_resume_react/static/js/runtime-main.0796d11f.js",
-    "runtime-main.js.map": "/-cesarvega_resume_react/static/js/runtime-main.0796d11f.js.map",
-    "static/js/2.51fd9d7e.chunk.js": "/-cesarvega_resume_react/static/js/2.51fd9d7e.chunk.js",
-    "static/js/2.51fd9d7e.chunk.js.map": "/-cesarvega_resume_react/static/js/2.51fd9d7e.chunk.js.map",
-    "static/js/3.f8db280e.chunk.js": "/-cesarvega_resume_react/static/js/3.f8db280e.chunk.js",
-    "static/js/3.f8db280e.chunk.js.map": "/-cesarvega_resume_react/static/js/3.f8db280e.chunk.js.map",
+    "main.js": "/-cesarvega_resume_react/static/js/main.ea091cef.chunk.js",
+    "main.js.map": "/-cesarvega_resume_react/static/js/main.ea091cef.chunk.js.map",
+    "runtime-main.js": "/-cesarvega_resume_react/static/js/runtime-main.ec7f09df.js",
+    "runtime-main.js.map": "/-cesarvega_resume_react/static/js/runtime-main.ec7f09df.js.map",
+    "static/js/2.7f6db7c7.chunk.js": "/-cesarvega_resume_react/static/js/2.7f6db7c7.chunk.js",
+    "static/js/2.7f6db7c7.chunk.js.map": "/-cesarvega_resume_react/static/js/2.7f6db7c7.chunk.js.map",
+    "static/js/3.ac09f42a.chunk.js": "/-cesarvega_resume_react/static/js/3.ac09f42a.chunk.js",
+    "static/js/3.ac09f42a.chunk.js.map": "/-cesarvega_resume_react/static/js/3.ac09f42a.chunk.js.map",
     "index.html": "/-cesarvega_resume_react/index.html",
     "static/css/main.73efbf52.chunk.css.map": "/-cesarvega_resume_react/static/css/main.73efbf52.chunk.css.map",
-    "static/js/2.51fd9d7e.chunk.js.LICENSE.txt": "/-cesarvega_resume_react/static/js/2.51fd9d7e.chunk.js.LICENSE.txt",
+    "static/js/2.7f6db7c7.chunk.js.LICENSE.txt": "/-cesarvega_resume_react/static/js/2.7f6db7c7.chunk.js.LICENSE.txt",
     "static/media/logo.2d27ead7.svg": "/-cesarvega_resume_react/static/media/logo.2d27ead7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0796d11f.js",
-    "static/js/2.51fd9d7e.chunk.js",
+    "static/js/runtime-main.ec7f09df.js",
+    "static/js/2.7f6db7c7.chunk.js",
     "static/css/main.73efbf52.chunk.css",
-    "static/js/main.893abb05.chunk.js"
+    "static/js/main.ea091cef.chunk.js"
   ]
 }
