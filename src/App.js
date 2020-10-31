@@ -1,10 +1,14 @@
 import './App.css';
 import Navbar from "./Components/Navbar"
 import MediaCard from "./Components/MediaCard"
+import react, {Component} from "react"
+
+import LazyLoad from 'react-lazyload';
 
 function App() {
   return (
     <>
+    <LazyLoad height={200} offset={100}>
     <div className ="container">
       <Navbar></Navbar>
       
@@ -168,6 +172,7 @@ function App() {
       </MediaCard>        
 
     </div>
+    </LazyLoad>
     </>
   );
 }
