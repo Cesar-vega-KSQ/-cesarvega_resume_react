@@ -26,6 +26,7 @@ export default function MediaCard(props) {
 
   return (
     <div id = {(props.cardID || "")}>
+    <LazyLoad height={200} offset={100}>
     <Card className={classes.root} style={myStyle}>
         <CardContent>
           <Typography gutterBottom variant="h4" component="h4">
@@ -48,6 +49,7 @@ export default function MediaCard(props) {
           {props.children}
         </CardContent>
     </Card>
+    </LazyLoad>
     </div>
   );
 }
