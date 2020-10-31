@@ -10,7 +10,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { Menu } from '@material-ui/icons';
@@ -54,16 +53,37 @@ const Navbar = () => {
       >
         <List>
          
-            <ListItem button key="My Life">
+            <ListItem button key="My Life" onClick={handleListClick}>
               <ListItemText primary="My Life"/>
+            </ListItem>
+
+            <ListItem button key="My work" onClick={handleListClick}>
+              <ListItemText primary="My work"/>
+            </ListItem>
+
+            <ListItem button key="Education" onClick={handleListClick}>
+              <ListItemText primary="Education"/>
+            </ListItem>
+
+            <ListItem button key="Experience" onClick={handleListClick}>
+              <ListItemText primary="Experience"/>
+            </ListItem>
+
+            <ListItem button key="Hobbies" onClick={handleListClick}>
+              <ListItemText primary="Hobbies"/>
             </ListItem>
         </List>
       </div>
     );
 
+
+    function handleListClick(){
+        console.log("A");
+    }
+
 	return(
         <>
-		<Box component="nav" position="static">
+		<Box component="nav" position="static" style = {{maxWidth: 750, margin: "auto"}}>
 			<AppBar position="static"
                 style={{ background: '#2E3B55' }
                 }
@@ -72,7 +92,7 @@ const Navbar = () => {
               <div>
                 {['left'].map((anchor) => (
                     <React.Fragment key="left">
-                    <Button onClick={toggleDrawer(anchor, true)}><h2 style ={{color: "#dfe3ee"}}>Open menu</h2><Menu style={{ color: "#dfe3ee"}} fontSize="large"/></Button>
+                    <Button onClick={toggleDrawer(anchor, true)}><h2 style ={{color: "#dfe3ee"}}>Open menu</h2><Menu style={{ color: "#dfe3ee", marginTop:"-10px", marginLeft: "5px"}} fontSize="large"/></Button>
                     <Drawer anchor="left" open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                         {list(anchor)}
                     </Drawer>
