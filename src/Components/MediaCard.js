@@ -31,8 +31,8 @@ export default function MediaCard(props) {
           <Typography gutterBottom variant="h4" component="h4">
             { (props.cardTitle || "The title could not be loaded")}
           </Typography>
-          <Typography gutterBottom variant="p" component="p" className = "quote">
-            { (props.cardQuote || "I like cats")}
+          <Typography variant="p" component="p">
+          { (props.cardDescription || "The description could not be loaded")}
           </Typography>
         </CardContent>
         <CardMedia
@@ -40,9 +40,11 @@ export default function MediaCard(props) {
           image= {(props.imageSource || "https://i.imgur.com/YcengQl.jpg" )}
         />
         <CardContent>
-          <Typography variant="p" component="p">
-          { (props.cardDescription || "The description could not be loaded")}
+          
+          <Typography gutterBottom variant="p" component="p" className = "quote">
+            { (props.cardQuote || "I like cats")}
           </Typography>
+
           {props.children}
         </CardContent>
     </Card>
