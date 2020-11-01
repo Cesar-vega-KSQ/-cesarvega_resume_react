@@ -14,6 +14,9 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { Menu } from '@material-ui/icons';
 
+import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import MediaCard from "./MediaCard";
+
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -25,7 +28,7 @@ const useStyles = makeStyles({
 
 
 
-const Navbar = () => {
+const Navbar = (props) => {
     const classes = useStyles();
     const [state, setState] = React.useState({
       top: false,
@@ -51,28 +54,48 @@ const Navbar = () => {
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
+        <Router>
         <List>
-         
-            <ListItem button key="My Life" onClick={handleListClick}>
-              <ListItemText primary="My Life"/>
-            </ListItem>
+                <ListItem button key="My Life" onClick={handleListClick}>
+                  <a href ="#MyLife">
+                    <ListItemText primary="My Life"/>
+                  </a>
+                </ListItem>
 
-            <ListItem button key="My work" onClick={handleListClick}>
-              <ListItemText primary="My work"/>
-            </ListItem>
+                <ListItem button key="Education" onClick={handleListClick}>
+                <a href="#MyEducation"> 
+                  <ListItemText primary="Education"/>
+                </a>
+                </ListItem>
 
-            <ListItem button key="Education" onClick={handleListClick}>
-              <ListItemText primary="Education"/>
-            </ListItem>
+                <ListItem button key="Experience" onClick={handleListClick}>
+                <a href="#MyExperience"> 
+                  <ListItemText primary="Experience"/>
+                </a>
+                </ListItem>
 
-            <ListItem button key="Experience" onClick={handleListClick}>
-              <ListItemText primary="Experience"/>
-            </ListItem>
+                <ListItem button key="Hobbies">
 
-            <ListItem button key="Hobbies" onClick={handleListClick}>
-              <ListItemText primary="Hobbies"/>
-            </ListItem>
+                <a href="#MyHobbies">
+                  
+                  <ListItemText primary="Hobbies"/>
+
+                </a>
+                  
+                </ListItem>
+
+                <ListItem button key="Linkedin">
+
+                <a href="https://www.linkedin.com/in/cesar-leonardo-vega-galvan/" target="_blank">
+                  
+                  <ListItemText primary="Linkedin"/>
+
+                </a>
+                  
+                </ListItem>                
+            
         </List>
+        </Router>
       </div>
     );
 

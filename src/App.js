@@ -1,11 +1,13 @@
 import './App.css';
-import Navbar from "./Components/Navbar"
-import MediaCard from "./Components/MediaCard"
-import react, {Component} from "react"
+import Navbar from "./Components/Navbar";
+import MediaCard from "./Components/MediaCard";
+import react from "react";
 
 import LazyLoad from 'react-lazyload';
+import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
 function App() {
+
   return (
     <>
     <LazyLoad height={200} offset={100}>
@@ -22,6 +24,7 @@ function App() {
       <a href="mailto:mailforksqgithubpagescontact@mailinator.com"><p style ={{fontSize:20, color: "#2E3B55"}}>Contact me!</p></a>
       </MediaCard>
       
+      <div id="MyLife"></div>  
       <MediaCard 
       cardTitle = "I was born in 1996 in Monclova..."
       cardQuote = " “This has made a lot of people angry and has been widely regarded as a bad move” - Douglas Adams"
@@ -38,6 +41,8 @@ function App() {
       >
       </MediaCard>
 
+      <div id="MyEducation">
+      </div>  
       <MediaCard 
       cardTitle = "In 2014 I started studying chemical engineering at the Tecnológico de Monterrey campus Monterrey"
       cardQuote = "    “University's like this little world, a bubble of time separate from everything before and everything after.” - Mhairi McFarlane    "
@@ -45,7 +50,8 @@ function App() {
       imageSource = "https://upload.wikimedia.org/wikipedia/commons/a/ae/ITESM_Monterrey_Rectoria_CETEC.jpg"
       >
       </MediaCard>
-
+            
+      <div id="MyExperience"></div>  
       <MediaCard 
       cardTitle = "In 2018 I started to look for internships."
       cardQuote = "    “Dude, sucking at sumthin’ is the first step towards being sorta good at something.” - Jake the dog    "
@@ -128,20 +134,22 @@ function App() {
       imageSource = "https://disruptivo.tv/wp-content/uploads/2019/09/online-3412473_1920.jpg"
       >
       </MediaCard>                
+         
+        <MediaCard 
+        cardTitle = "Hobbies"
+        cardQuote = "    “Saving the world is only a hobby. Most of the time I do nothing.” - Edward Abbey    "
+        cardDescription = {<ul>
+          <li><a> Cooking </a></li>
+          <li><a> Economics and finance </a></li>
+          <li><a> Board games </a></li>
+          <li><a> Excercise </a></li>
+        </ul>}
+        imageSource = "https://fadedspring.co.uk/wp-content/uploads/2020/06/art-2578353_1920-750x500.jpg"
+        >
+        </MediaCard> 
 
-      <MediaCard 
-      cardTitle = "Hobbies"
-      cardQuote = "    “Saving the world is only a hobby. Most of the time I do nothing.” - Edward Abbey    "
-      cardDescription = {<ul>
-        <li><a> Cooking </a></li>
-        <li><a> Economics and finance </a></li>
-        <li><a> Board games </a></li>
-        <li><a> Excercise </a></li>
-      </ul>}
-      imageSource = "https://fadedspring.co.uk/wp-content/uploads/2020/06/art-2578353_1920-750x500.jpg"
-      >
-      </MediaCard>    
 
+      
       <MediaCard 
       cardTitle = "The future and my bucketlist"
       cardQuote = "    “Every man gotta right to decide his own destiny.” - Bob Marley    "
@@ -158,7 +166,8 @@ function App() {
       imageSource = "https://cdn.pixabay.com/photo/2014/09/27/17/35/dandelion-463928_1280.jpg"
       >
       </MediaCard>       
-
+      
+      
       <MediaCard 
       cardTitle = "  "
       cardQuote = "    “Optimism is a strategy for making a better future. Because unless you believe that the future can be better, you are unlikely to step up and take responsibility for making it so.” - Noam Chomsky    "
@@ -169,7 +178,9 @@ function App() {
       }
       imageSource = "https://images.unsplash.com/photo-1549032305-e816fabf0dd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
       >
-      </MediaCard>        
+      </MediaCard>
+      <div id="MyHobbies" style ={{marginTop: "45px"}}>
+      </div>        
 
     </div>
     </LazyLoad>
