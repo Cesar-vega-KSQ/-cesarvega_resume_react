@@ -93,6 +93,12 @@ const Navbar = (props) => {
                   <ListItemText primary="Linkedin"/>
                 </ListItem>                
                 </a>
+
+                <a href="mailto:mailforksqgithubpagescontact@mailinator.com">
+                <ListItem button key="Contact me!">
+                  <ListItemText primary="Contact me!"/>
+                </ListItem>                
+                </a>
             
         </List>
         </Router>
