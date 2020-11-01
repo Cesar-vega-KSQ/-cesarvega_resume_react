@@ -56,43 +56,43 @@ const Navbar = (props) => {
       >
         <Router>
         <List>
+                <a href ="#MyLife">
                 <ListItem button key="My Life" onClick={handleListClick}>
-                  <a href ="#MyLife">
+                  
                     <ListItemText primary="My Life"/>
-                  </a>
+                  
                 </ListItem>
+                </a>
 
-                <ListItem button key="Education" onClick={handleListClick}>
                 <a href="#MyEducation"> 
+                <ListItem button key="Education" onClick={handleListClick}>
                   <ListItemText primary="Education"/>
-                </a>
                 </ListItem>
-
-                <ListItem button key="Experience" onClick={handleListClick}>
+                </a>
+                
                 <a href="#MyExperience"> 
+                <ListItem button key="Experience" onClick={handleListClick}>
                   <ListItemText primary="Experience"/>
-                </a>
                 </ListItem>
+                </a>
 
-                <ListItem button key="Hobbies">
+                <a href="#AreasOfExpertice"> 
+                <ListItem button key="Areas Of Expertice" onClick={handleListClick}>
+                  <ListItemText primary="Areas Of Expertice"/>
+                </ListItem>
+                </a>
 
                 <a href="#MyHobbies">
-                  
+                <ListItem button key="Hobbies" onClick={handleListClick}>
                   <ListItemText primary="Hobbies"/>
-
-                </a>
-                  
                 </ListItem>
-
-                <ListItem button key="Linkedin">
-
-                <a href="https://www.linkedin.com/in/cesar-leonardo-vega-galvan/" target="_blank">
-                  
-                  <ListItemText primary="Linkedin"/>
-
                 </a>
-                  
+                
+                <a href="https://www.linkedin.com/in/cesar-leonardo-vega-galvan/" target="_blank">
+                <ListItem button key="Linkedin">
+                  <ListItemText primary="Linkedin"/>
                 </ListItem>                
+                </a>
             
         </List>
         </Router>
@@ -101,15 +101,17 @@ const Navbar = (props) => {
 
 
     function handleListClick(){
-        console.log("A");
+        props.scrollUpPage();
     }
 
+    //Note: position = "static" to keep on top of page.
+    // position = "fixed" to let menu follow site
 	return(
         <>
 		<Box component="nav" position="static" style = {{maxWidth: 750, margin: "auto"}}>
-			<AppBar position="static"
-                style={{ background: '#2E3B55' }
-                }
+			<AppBar position="fixed"
+                style={{ background: '#2E3B55'
+              }}
             >
 			  <Toolbar style ={{margin: "auto"}}>
               <div>

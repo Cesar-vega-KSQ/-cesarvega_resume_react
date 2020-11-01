@@ -8,12 +8,29 @@ import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
 function App() {
 
+  function scrollUpFunction(){
+    setTimeout(scrollFunction,50);
+  }
+
+  function scrollFunction(){
+    //window.scrollBy(10, -50);
+    window.scrollBy({
+      top: -50,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <>
     <LazyLoad height={200} offset={100}>
     <div className ="container">
-      <Navbar></Navbar>
-      
+      <div className = "row">
+        <Navbar
+        scrollUpPage = {scrollUpFunction}
+        ></Navbar>
+      </div>
+      <div style = {{marginTop: "100px"}}>
       <MediaCard 
       cardTitle = "Hello! I am César Vega."
       cardQuote = " “Never take life seriously. Nobody gets out alive anyway.” — Elbert Hubbard "
@@ -24,14 +41,15 @@ function App() {
       <a href="mailto:mailforksqgithubpagescontact@mailinator.com"><p style ={{fontSize:20, color: "#2E3B55"}}>Contact me!</p></a>
       </MediaCard>
       
-      <div id="MyLife"></div>  
-      <MediaCard 
+      <div id="MyLife"/>
+      <MediaCard
       cardTitle = "I was born in 1996 in Monclova..."
       cardQuote = " “This has made a lot of people angry and has been widely regarded as a bad move” - Douglas Adams"
       cardDescription = " "
       imageSource = "https://images.unsplash.com/photo-1537222961176-50d25fff78ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
       >
       </MediaCard>
+      
 
       <MediaCard 
       cardTitle = "In 2012 I studied in Canada for 6 months to improve my English."
@@ -111,6 +129,7 @@ function App() {
       >
       </MediaCard>      
 
+      <div id="AreasOfExpertice"></div>  
       <MediaCard 
       cardTitle = "My areas of expertise"
       cardQuote = "    “Build your skills, not your resume.” - Sheryl Sandberg    "
@@ -134,19 +153,21 @@ function App() {
       imageSource = "https://disruptivo.tv/wp-content/uploads/2019/09/online-3412473_1920.jpg"
       >
       </MediaCard>                
-         
-        <MediaCard 
-        cardTitle = "Hobbies"
-        cardQuote = "    “Saving the world is only a hobby. Most of the time I do nothing.” - Edward Abbey    "
-        cardDescription = {<ul>
-          <li><a> Cooking </a></li>
-          <li><a> Economics and finance </a></li>
-          <li><a> Board games </a></li>
-          <li><a> Excercise </a></li>
-        </ul>}
-        imageSource = "https://fadedspring.co.uk/wp-content/uploads/2020/06/art-2578353_1920-750x500.jpg"
-        >
-        </MediaCard> 
+      
+      <div id="MyHobbies"></div>
+      <MediaCard 
+      cardTitle = "Hobbies"
+      cardQuote = "    “Saving the world is only a hobby. Most of the time I do nothing.” - Edward Abbey    "
+      cardDescription = {<ul>
+        <li><a> Cooking </a></li>
+        <li><a> Economics and finance </a></li>
+        <li><a> Board games </a></li>
+        <li><a> Excercise </a></li>
+      </ul>}
+      imageSource = "https://fadedspring.co.uk/wp-content/uploads/2020/06/art-2578353_1920-750x500.jpg"
+      >
+      </MediaCard> 
+      
 
 
       
@@ -179,9 +200,9 @@ function App() {
       imageSource = "https://images.unsplash.com/photo-1549032305-e816fabf0dd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
       >
       </MediaCard>
-      <div id="MyHobbies" style ={{marginTop: "45px"}}>
-      </div>        
+      
 
+      </div>
     </div>
     </LazyLoad>
     </>
