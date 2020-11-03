@@ -73,14 +73,14 @@ function App() {
       <MediaCard 
       cardTitle = "In 2018 I started to look for internships."
       cardQuote = "    “Dude, sucking at sumthin’ is the first step towards being sorta good at something.” - Jake the dog    "
-      cardDescription = " In my first interview I was asked if I knew python. I panicked and said yes. I did not know python back then. I got the job. For the next few weeks I worked late to read and learn about python. "
+      cardDescription = " In my first interview I was asked if I knew python. I panicked and said yes. I did not know python back then. I got the job. For the next few weeks, I worked late to read and learn about python. "
       imageSource = "https://static.pisapapeles.net/uploads/2019/07/bear-2382779_1920-1400x933.jpg"
       >
       </MediaCard>
 
       <MediaCard 
       cardTitle = "In 2018 I started my first internship at DeAcero as an Energy Analyst."
-      cardQuote = "    “Prediction is very difficult, especially if it's about the future. ” - Nils Bohr    "
+      cardQuote = "    “Prediction is very difficult, especially if it's about the future.” - Nils Bohr    "
       cardDescription = "I built a model to forecast energy prices, demand and generation in short and long term in the company and the Mexican market. "
       imageSource = "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
       >
@@ -108,14 +108,14 @@ function App() {
       <MediaCard 
       cardTitle = "In early 2020 the coronavirus pandemic started and I decided to stay at my house, study, and work as a freelancer."
       cardQuote = "    “Bad times have a scientific value. These are occasions a good learner would not miss.” - Ralph Waldo Emmerson    "
-      cardDescription = " During that time I learnt about atificial intelligence, management consulting, big data, and finance. As a freelancer I automated a company's data collection strategies. I worked in a Tableau dashboard. And I worked on a machine learning algorithm to forecast the client's energy consumption.  ​"
+      cardDescription = " During that time, I learnt about artificial intelligence, management consulting, big data, and finance. As a freelancer I automated a company's data collection strategies. I worked in a Tableau dashboard. And I worked on a machine learning algorithm to forecast the client's energy consumption.  ​"
       imageSource = "https://i.pinimg.com/originals/76/09/46/7609468e97e15d1da8d14d534be7366c.gif"
       >
       </MediaCard>       
 
       <MediaCard 
-      cardTitle = "In August 2020 I was hired at KSquare University as an associate software engineer focused on Javascript."
-      cardQuote = "    “Choose a job you love, and you will never have to work a day in your life.” - Confucious    "
+      cardTitle = "In August 2020 I was hired at KSquare University as an associate software engineer focused on JavaScript."
+      cardQuote = "    “Choose a job you love, and you will never have to work a day in your life.” - Confucius    "
       cardDescription = "   ​"
       imageSource = "https://cdn.pixabay.com/photo/2016/09/08/04/12/programmer-1653351_1280.png"
       >
@@ -147,7 +147,7 @@ function App() {
       cardQuote = "    “certificates can’t replace self-education.” - Sunday Adelaja    "
       cardDescription = {<ul>
         <li><a> Languages: Spanish and English </a></li>
-        <li><a> Basic certification of the mexican energy market </a></li>
+        <li><a> Basic certification of the Mexican energy market </a></li>
         <li><a> Chartered financial analyst </a></li>
       </ul>}
       imageSource = "https://disruptivo.tv/wp-content/uploads/2019/09/online-3412473_1920.jpg"
@@ -162,7 +162,7 @@ function App() {
         <li><a> Cooking </a></li>
         <li><a> Economics and finance </a></li>
         <li><a> Board games </a></li>
-        <li><a> Excercise </a></li>
+        <li><a> Exercise  </a></li>
       </ul>}
       imageSource = "https://fadedspring.co.uk/wp-content/uploads/2020/06/art-2578353_1920-750x500.jpg"
       >
@@ -172,13 +172,13 @@ function App() {
 
       
       <MediaCard 
-      cardTitle = "The future and my bucketlist"
+      cardTitle = "The future and my bucket list"
       cardQuote = "    “Every man gotta right to decide his own destiny.” - Bob Marley    "
       cardDescription = {
         <>
       <p>I don't have an specific plan for the future. But I have some guidelines on what I want to do. </p>
       <ul>
-        <li><a> I want to get a technology masters in the next decade. </a></li>
+        <li><a> I want to get a technology master in the next decade. </a></li>
         <li><a> I want to start or support a charity to give free education, a household and food to children and teenagers. </a></li>
         <li><a> I want to keep working on technology for the rest of my life. </a></li>
       </ul>
