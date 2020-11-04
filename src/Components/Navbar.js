@@ -54,8 +54,7 @@ const Navbar = (props) => {
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
-        <Router>
-        <Switch>
+        
           <List>
                 <a href ="/-cesarvega_resume_react/#MyLife">
                 <ListItem button key="My Life" onClick={handleListClick}>
@@ -65,12 +64,10 @@ const Navbar = (props) => {
                 </ListItem>
                 </a>
 
-                <a onClick ={handleMyWorkClick}>
-                <Link to={"/-cesarvega_resume_react/mywork"}>
+                <a href ="#mywork">
                 <ListItem button key="My Work">
                     <ListItemText primary="My Work"/>                  
                 </ListItem>
-                </Link> 
                 </a>
                 
 
@@ -112,8 +109,6 @@ const Navbar = (props) => {
                 </a>
             
           </List>
-        </Switch>
-        </Router>
       </div>
     );
 
