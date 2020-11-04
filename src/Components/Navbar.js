@@ -57,7 +57,7 @@ const Navbar = (props) => {
         <Router>
         <Switch>
           <List>
-                <a href ="/#MyLife">
+                <a href ="-cesarvega_resume_react/#MyLife">
                 <ListItem button key="My Life" onClick={handleListClick}>
                   
                     <ListItemText primary="My Life"/>
@@ -66,7 +66,7 @@ const Navbar = (props) => {
                 </a>
 
                 <a onClick ={handleMyWorkClick}>
-                <Link to={"/mywork"}>
+                <Link to={"-cesarvega_resume_react/mywork"}>
                 <ListItem button key="My Work">
                     <ListItemText primary="My Work"/>                  
                 </ListItem>
@@ -75,25 +75,25 @@ const Navbar = (props) => {
                 
 
 
-                <a href="/#MyEducation"> 
+                <a href="-cesarvega_resume_react/#MyEducation"> 
                 <ListItem button key="Education" onClick={handleListClick}>
                   <ListItemText primary="Education"/>
                 </ListItem>
                 </a>
                 
-                <a href="/#MyExperience"> 
+                <a href="-cesarvega_resume_react/#MyExperience"> 
                 <ListItem button key="Experience" onClick={handleListClick}>
                   <ListItemText primary="Experience"/>
                 </ListItem>
                 </a>
 
-                <a href="/#AreasOfExpertice"> 
+                <a href="-cesarvega_resume_react/#AreasOfExpertice"> 
                 <ListItem button key="Areas Of Expertice" onClick={handleListClick}>
                   <ListItemText primary="Areas Of Expertice"/>
                 </ListItem>
                 </a>
 
-                <a href="/#MyHobbies">
+                <a href="-cesarvega_resume_react/#MyHobbies">
                 <ListItem button key="Hobbies" onClick={handleListClick}>
                   <ListItemText primary="Hobbies"/>
                 </ListItem>
