@@ -28,7 +28,7 @@ export default function MediaCard(props) {
 
   return (
     <div id = {(props.cardID || "")}>
-    <LazyLoad height={200} offset={100}>
+    
     <Card className={classes.root} style={myStyle}>
         <CardContent>
           <Typography gutterBottom variant="h4" component="h4">
@@ -38,10 +38,12 @@ export default function MediaCard(props) {
           { (props.cardDescription || "The description could not be loaded")}
           </Typography>
         </CardContent>
+        <LazyLoad height={200} offset={100}>
         <CardMedia
           className={classes.media}
           image= {(props.imageSource || "https://i.imgur.com/YcengQl.jpg" )}
         />
+        </LazyLoad>
         <CardContent>
           
           <Typography gutterBottom variant="p" component="p" className = "quote">
@@ -51,7 +53,7 @@ export default function MediaCard(props) {
           {props.children}
         </CardContent>
     </Card>
-    </LazyLoad>
+    
     </div>
   );
 }

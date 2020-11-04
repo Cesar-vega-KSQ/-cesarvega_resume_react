@@ -1,14 +1,15 @@
 import './App.css';
 import Navbar from "./Components/Navbar";
 import MediaCard from "./Components/MediaCard";
-import react from "react";
+import React, {useEffect} from "react";
 
 import LazyLoad from 'react-lazyload';
-import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import MyWork from "./views/MyWork"
 
 function App() {
 
-  function scrollUpFunction(){
+  function scrollUpFunction(){    
     setTimeout(scrollFunction,50);
   }
 
@@ -21,9 +22,18 @@ function App() {
     });
   }
 
+
+
   return (
     <>
     <LazyLoad height={200} offset={100}>
+    <Router>
+      <Switch>
+      
+      <Route path="/mywork" component={MyWork}></Route>
+    
+    
+    
     <div className ="container">
       <div className = "row">
         <Navbar
@@ -31,6 +41,8 @@ function App() {
         ></Navbar>
       </div>
       <div style = {{marginTop: "100px"}}>
+      
+      <div id="MyLife"/>
       <MediaCard 
       cardTitle = "Hello! I am César Vega."
       cardQuote = " “Never take life seriously. Nobody gets out alive anyway.” — Elbert Hubbard "
@@ -41,7 +53,7 @@ function App() {
       <a href="mailto:mailforksqgithubpagescontact@mailinator.com"><p style ={{fontSize:20, color: "#2E3B55"}}>Contact me!</p></a>
       </MediaCard>
       
-      <div id="MyLife"/>
+      
       <MediaCard
       cardTitle = "I was born in 1996 in Monclova..."
       cardQuote = " “This has made a lot of people angry and has been widely regarded as a bad move” - Douglas Adams"
@@ -204,6 +216,9 @@ function App() {
 
       </div>
     </div>
+
+    </Switch>
+    </Router>
     </LazyLoad>
     </>
   );

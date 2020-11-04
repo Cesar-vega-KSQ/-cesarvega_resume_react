@@ -14,8 +14,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { Menu } from '@material-ui/icons';
 
-import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
-import MediaCard from "./MediaCard";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MyWork from "../views/MyWork";
 
 const useStyles = makeStyles({
   list: {
@@ -55,8 +55,9 @@ const Navbar = (props) => {
         onKeyDown={toggleDrawer(anchor, false)}
       >
         <Router>
-        <List>
-                <a href ="#MyLife">
+        <Switch>
+          <List>
+                <a href ="/#MyLife">
                 <ListItem button key="My Life" onClick={handleListClick}>
                   
                     <ListItemText primary="My Life"/>
@@ -64,25 +65,35 @@ const Navbar = (props) => {
                 </ListItem>
                 </a>
 
-                <a href="#MyEducation"> 
+                <a onClick ={handleMyWorkClick}>
+                <Link to={"/mywork"}>
+                <ListItem button key="My Work">
+                    <ListItemText primary="My Work"/>                  
+                </ListItem>
+                </Link> 
+                </a>
+                
+
+
+                <a href="/#MyEducation"> 
                 <ListItem button key="Education" onClick={handleListClick}>
                   <ListItemText primary="Education"/>
                 </ListItem>
                 </a>
                 
-                <a href="#MyExperience"> 
+                <a href="/#MyExperience"> 
                 <ListItem button key="Experience" onClick={handleListClick}>
                   <ListItemText primary="Experience"/>
                 </ListItem>
                 </a>
 
-                <a href="#AreasOfExpertice"> 
+                <a href="/#AreasOfExpertice"> 
                 <ListItem button key="Areas Of Expertice" onClick={handleListClick}>
                   <ListItemText primary="Areas Of Expertice"/>
                 </ListItem>
                 </a>
 
-                <a href="#MyHobbies">
+                <a href="/#MyHobbies">
                 <ListItem button key="Hobbies" onClick={handleListClick}>
                   <ListItemText primary="Hobbies"/>
                 </ListItem>
@@ -100,7 +111,8 @@ const Navbar = (props) => {
                 </ListItem>                
                 </a>
             
-        </List>
+          </List>
+        </Switch>
         </Router>
       </div>
     );
@@ -108,6 +120,14 @@ const Navbar = (props) => {
 
     function handleListClick(){
         props.scrollUpPage();
+    }
+
+    function handleMyWorkClick(){
+      setTimeout(refreshSiteFunction,100);
+    }
+    
+    function refreshSiteFunction(){
+      window.location.reload();
     }
 
     //Note: position = "static" to keep on top of page.
@@ -123,7 +143,7 @@ const Navbar = (props) => {
               <div>
                 {['left'].map((anchor) => (
                     <React.Fragment key="left">
-                    <Button onClick={toggleDrawer(anchor, true)}><h2 style ={{color: "#dfe3ee"}}>Open menu</h2><Menu style={{ color: "#dfe3ee", marginTop:"-10px", marginLeft: "5px"}} fontSize="large"/></Button>
+                    <Button onClick={toggleDrawer(anchor, true)}><h2 style ={{color: "#dfe3ee"}}>Cesar Vega</h2><Menu style={{ color: "#dfe3ee", marginTop:"-10px", marginLeft: "5px"}} fontSize="large"/></Button>
                     <Drawer anchor="left" open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                         {list(anchor)}
                     </Drawer>
