@@ -65,7 +65,7 @@ const Navbar = (props) => {
                 </a>
 
                 <a href ="#mywork">
-                <ListItem button key="My Work"  onClick={handleListClick}>
+                <ListItem button key="My Work" onClick={handleListClick}>
                     <ListItemText primary="My Work"/>                  
                 </ListItem>
                 </a>

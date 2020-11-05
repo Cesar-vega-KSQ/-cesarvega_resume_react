@@ -4,8 +4,6 @@ import MediaCard from "./Components/MediaCard";
 import React, {useEffect} from "react";
 
 import LazyLoad from 'react-lazyload';
-import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
-import MyWork from "./views/MyWork"
 
 function App() {
 
@@ -165,7 +163,7 @@ function App() {
 
       <div id="mywork"></div>  
       <MediaCard 
-      cardTitle = "Tronald dump translator API"
+      cardTitle = "My work: Tronald dump translator API"
       cardQuote = " “Th' beauty o' me be that I be mighty rich.” — Donald Trump (Pirate version)"
       cardDescription = "This API takes tweets from Donald Trump and translates them into popular culture languages; Like yoda-language, pirate speak,and others."
       imageSource = "https://images.unsplash.com/photo-1592499879835-3a1691ab26be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
@@ -175,7 +173,7 @@ function App() {
       </MediaCard>
 
       <MediaCard
-        cardTitle = "My resume online"
+        cardTitle = "My work: My resume online"
         cardQuote = " “I hope this website looks good” - Cesar Vega"
         cardDescription = "Read about my life and my proyects"
         imageSource = "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
