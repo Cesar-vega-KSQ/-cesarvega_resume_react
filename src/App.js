@@ -142,8 +142,8 @@ function App() {
       cardQuote = "    “Build your skills, not your resume.” - Sheryl Sandberg    "
       cardDescription = {<ul>
         <li><a> Energy Market </a></li>
-        <li><a> Data Analysis </a></li>
-        <li><a> Programming </a></li>
+        <li><a> Data Analysis - Python, Tensorflow </a></li>
+        <li><a> JavaScript - React </a></li>
       </ul>}
       imageSource = "https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
       >
