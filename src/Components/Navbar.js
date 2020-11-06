@@ -64,13 +64,6 @@ const Navbar = (props) => {
                 </ListItem>
                 </a>
 
-                <a href ="#mywork">
-                <ListItem button key="My Work" onClick={handleListClick}>
-                    <ListItemText primary="My Work"/>                  
-                </ListItem>
-                </a>
-                
-
 
                 <a href="/-cesarvega_resume_react/#MyEducation"> 
                 <ListItem button key="Education" onClick={handleListClick}>
@@ -87,6 +80,12 @@ const Navbar = (props) => {
                 <a href="/-cesarvega_resume_react/#AreasOfExpertice"> 
                 <ListItem button key="Areas Of Expertice" onClick={handleListClick}>
                   <ListItemText primary="Areas Of Expertice"/>
+                </ListItem>
+                </a>
+
+                <a href ="#mywork">
+                <ListItem button key="My Work" onClick={handleListClick}>
+                    <ListItemText primary="My Work"/>                  
                 </ListItem>
                 </a>
 

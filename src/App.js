@@ -226,6 +226,8 @@ function App() {
       }
       imageSource = "https://images.unsplash.com/photo-1549032305-e816fabf0dd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
       >
+      <p style= {{opacity: 0, marginTop: "-25px"}}>.</p> 
+      <a href="mailto:mailforksqgithubpagescontact@mailinator.com"><p style ={{fontSize:20, color: "#2E3B55"}}>Contact me!</p></a>
       </MediaCard>
       
 
